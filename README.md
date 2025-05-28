@@ -17,6 +17,9 @@ https://www.youtube.com/watch?v=VM2K-JvrVXs
 - **Zero Configuration**: Works out of the box with no setup required
 - **Privacy Focused**: Your conversations are processed securely and not stored
 
+## Flow Chart Architecture 
+![Flow chart](assets/flowchart.png)
+
 ## How It Works
 
 1. Promper reads your current conversation context (previous messages)
