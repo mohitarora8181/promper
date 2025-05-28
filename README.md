@@ -3,6 +3,9 @@
 ## Overview
 Promper is a Chrome extension that automatically enhances your prompts across various AI chat interfaces including ChatGPT, Google Gemini, and Claude. This extension intelligently analyzes your conversation context and transforms your queries into more effective prompts, helping you get better responses with less back-and-forth.
 
+## Demo Video 
+https://www.youtube.com/watch?v=VM2K-JvrVXs
+
 ## Features
 
 - **One-Click Enhancement**: Press `Ctrl + Shift` while typing to instantly enhance your prompt before sending
@@ -22,12 +25,16 @@ Promper is a Chrome extension that automatically enhances your prompts across va
 4. Your query is automatically rewritten into a more effective prompt
 5. The enhanced prompt replaces your original text and can be sent immediately
 
+## Screenshots
+
+![Writing prompt](assets/image-1.png)
+![Get Enhanced prompt](assets/image.png)
+
 ## Installation
 
-1. Download the extension from the Chrome Web Store
-2. Click "Add to Chrome"
-3. The extension icon will appear in your toolbar
-4. Navigate to any supported AI chat platform and start enhancing your prompts!
+1. Star & Clone this repo into your local machine.
+2. Open chrome://extensions/ , and click Developer Mode.
+3. Click Load unpacked & import the folder in which these code files downloaded .
 
 ## Benefits
 
@@ -54,14 +61,6 @@ Promper uses a combination of:
 ## Privacy & Data Usage
 
 Promper only processes the text in your current conversation when you explicitly trigger enhancement with the keyboard shortcut. No conversation data is stored beyond what's necessary for the immediate enhancement. All API communication is secured with industry-standard encryption.
-
-## Support
-
-For issues, feature requests, or contributions, please visit our [GitHub repository](https://github.com/yourusername/promper) or contact us at support@promper.ai.
-
-## License
-
-MIT License - See LICENSE file for details.
 
 ---
 
