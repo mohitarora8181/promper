@@ -18,7 +18,7 @@ https://www.youtube.com/watch?v=VM2K-JvrVXs
 - **Privacy Focused**: Your conversations are processed securely and not stored
 
 ## Flow Chart Architecture 
-![Flow chart](assets/flowchart.png)
+![Flow chart](assets/flowChart.png)
 
 ## How It Works
 
