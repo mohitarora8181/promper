@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 450px; min-height: 400px;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promper Extension</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .feature-card {
+      transition: all 0.2s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .shortcut-key {
+      padding: 2px 6px;
+      background-color: #f3f4f6;
+      border-radius: 4px;
+      font-family: monospace;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 p-6">
+  <div class="w-full h-full bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+    <!-- Header -->
+    <div class="bg-gradient-to-r from-blue-500 to-purple-600 p-5">
+      <h1 class="text-2xl font-bold text-white">Promper</h1>
+      <p class="text-blue-100 mt-1">Universal AI prompt enhancement engine</p>
+    </div>
+
+    <!-- Main content -->
+    <div class="p-5">
+      <!-- How to use -->
+      <div class="mb-6">
+        <h2 class="text-lg font-semibold text-gray-800 mb-2">How to use</h2>
+        <p class="text-gray-600 mb-2">
+          While typing, press <span class="shortcut-key">Ctrl</span> + <span class="shortcut-key">Shift</span> to instantly enhance your prompt.
+        </p>
+        <div class="bg-blue-50 border border-blue-100 rounded-lg p-3 text-sm text-blue-700">
+          Works on any AI conversation interface. No configuration needed!
+        </div>
+      </div>
+
+      <!-- Benefits -->
+      <h2 class="text-lg font-semibold text-gray-800 mb-3">Benefits</h2>
+      <div class="grid gap-3">
+        <div class="feature-card bg-white p-3 rounded-lg border border-gray-200 hover:border-blue-300">
+          <div class="flex items-start">
+            <div class="bg-blue-100 rounded-full p-2 mr-3">
+              <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z">
+                </path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-medium text-gray-800">Clearer, More Effective Prompts</h3>
+              <p class="text-sm text-gray-600">Automatically restructures your questions for optimal AI responses</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card bg-white p-3 rounded-lg border border-gray-200 hover:border-blue-300">
+          <div class="flex items-start">
+            <div class="bg-purple-100 rounded-full p-2 mr-3">
+              <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4">
+                </path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-medium text-gray-800">Context-Aware Enhancement</h3>
+              <p class="text-sm text-gray-600">Considers your previous messages for more relevant improvements</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card bg-white p-3 rounded-lg border border-gray-200 hover:border-blue-300">
+          <div class="flex items-start">
+            <div class="bg-green-100 rounded-full p-2 mr-3">
+              <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-medium text-gray-800">Save Time</h3>
+              <p class="text-sm text-gray-600">Avoid multiple back-and-forth refinements with AI assistants</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
+        <div class="text-xs text-gray-500">
+          Press Ctrl+Shift to enhance
+        </div>
+        <button id="see_demo"
+          class="py-2 px-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-medium text-sm hover:opacity-90 transition-opacity">
+          See Demo
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
